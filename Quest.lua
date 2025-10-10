@@ -1238,3 +1238,4 @@ module.getbossquest = function()
 		NCQ_B = NameCheckQuest_B
 	}
 end
+return module
