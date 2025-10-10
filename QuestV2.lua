@@ -1056,188 +1056,123 @@ module.getquest = function()
 end
 
 module.getbossquest = function()
-	local MyLevel = MyLevel or game.Players.LocalPlayer.Data.Level.Value
-	Monster_B = ""
+	local MyLevel = game.Players.LocalPlayer.Data.Level.Value
+	local Monster_B, LevelQuest_B, NameCheckQuest_B
+
+	-- Third Sea
 	if ThirdSea then
 		if MyLevel >= 2175 then
-			if NameQuest == "IceCreamIslandQuest" then
-				Monster_B = "Cake Queen"
-
-				LevelQuest_B = 3
-				NameCheckQuest_B = "Cake Queen"
-			end
+			Monster_B = "Cake Queen"
+			LevelQuest_B = 3
+			NameCheckQuest_B = "Cake Queen"
 		elseif MyLevel >= 1950 then
-			if NameQuest == "DeepForestIsland2" then
-				Monster_B = "Beautiful Pirate"
-
-				LevelQuest_B = 3
-				NameCheckQuest_B = "Beautiful Pirate"
-			end
+			Monster_B = "Beautiful Pirate"
+			LevelQuest_B = 3
+			NameCheckQuest_B = "Beautiful Pirate"
 		elseif MyLevel >= 1875 then
-			if NameQuest == "DeepForestIsland" then
-				Monster_B = "Captain Elephant"
-
-				LevelQuest_B = 3
-				NameCheckQuest_B = "Captain Elephant"
-			end
+			Monster_B = "Captain Elephant"
+			LevelQuest_B = 3
+			NameCheckQuest_B = "Captain Elephant"
 		elseif MyLevel >= 1750 then
-			if NameQuest == "MarineTreeIsland" then
-				Monster_B = "Kilo Admiral"
-
-				LevelQuest_B = 3
-				NameCheckQuest_B = "Kilo Admiral"
-			end
+			Monster_B = "Kilo Admiral"
+			LevelQuest_B = 3
+			NameCheckQuest_B = "Kilo Admiral"
 		elseif MyLevel >= 1675 then
-			if NameQuest == "VenomCrewQuest" then
-				Monster_B = "Hydra Leader"
-
-				LevelQuest_B = 3
-				NameCheckQuest_B = "Hydra Leader"
-			end
+			Monster_B = "Hydra Leader"
+			LevelQuest_B = 3
+			NameCheckQuest_B = "Hydra Leader"
 		elseif MyLevel >= 1550 then
-			if NameQuest == "PiratePortQuest" then
-				Monster_B = "Stone"
-
-				LevelQuest_B = 3
-				NameCheckQuest_B = "Stone"
-			end
+			Monster_B = "Stone"
+			LevelQuest_B = 3
+			NameCheckQuest_B = "Stone"
 		end
+
+	-- Second Sea
 	elseif SecondSea then
-		elseif MyLevel >= 1475 then
-			if NameQuest == "ForgottenQuest" then
-				Monster_B = "Tide Keeper"
-
-				LevelQuest_B = 3
-				NameCheckQuest_B = "Tide Keeper"
-			end
+		if MyLevel >= 1475 then
+			Monster_B = "Tide Keeper"
+			LevelQuest_B = 3
+			NameCheckQuest_B = "Tide Keeper"
 		elseif MyLevel >= 1400 then
-			if NameQuest == "FrostQuest" then
-				Monster_B = "Ice Admiral"
-
-				LevelQuest_B = 3
-				NameCheckQuest_B = "Awakened Ice Admiral"
-			end
+			Monster_B = "Ice Admiral"
+			LevelQuest_B = 3
+			NameCheckQuest_B = "Awakened Ice Admiral"
 		elseif MyLevel >= 1150 then
-			if NameQuest == "IceSideQuest" then
-				Monster_B = "Smoke Admiral"
-
-				LevelQuest_B = 3
-				NameCheckQuest_B = "Smoke Admiral"
-			end
+			Monster_B = "Smoke Admiral"
+			LevelQuest_B = 3
+			NameCheckQuest_B = "Smoke Admiral"
 		elseif MyLevel >= 925 then
-			if NameQuest == "MarineQuest3" then
-				Monster_B = "Fajita"
-
-				LevelQuest_B = 3
-				NameCheckQuest_B = "Fajita"
-			end
+			Monster_B = "Fajita"
+			LevelQuest_B = 3
+			NameCheckQuest_B = "Fajita"
 		elseif MyLevel >= 850 then
-			if NameQuest == "Area2Quest" then
-				Monster_B = "Jeremy"
-
-				LevelQuest_B = 3
-				NameCheckQuest_B = "Jeremy"
-			end
+			Monster_B = "Jeremy"
+			LevelQuest_B = 3
+			NameCheckQuest_B = "Jeremy"
 		elseif MyLevel >= 750 then
-			if NameQuest == "Area1Quest" then
-				Monster_B = "Diamond"
-
-				LevelQuest_B = 3
-				NameCheckQuest_B = "Diamond"
-			end
+			Monster_B = "Diamond"
+			LevelQuest_B = 3
+			NameCheckQuest_B = "Diamond"
 		end
-	elseif FirstSea  then
+
+	-- First Sea
+	elseif FirstSea then
 		if MyLevel >= 675 then
-			if NameQuest == "FountainQuest" then
-				Monster_B = "Cyborg"
-
-				LevelQuest_B = 3
-				NameCheckQuest_B = "Cyborg"
-			end
+			Monster_B = "Cyborg"
+			LevelQuest_B = 3
+			NameCheckQuest_B = "Cyborg"
 		elseif MyLevel >= 575 then
-			if NameQuest == "SkyExp2Quest" then
-				Monster_B = "Thunder God"
-
-				LevelQuest_B = 3
-				NameCheckQuest_B = "Thunder God"
-			end
+			Monster_B = "Thunder God"
+			LevelQuest_B = 3
+			NameCheckQuest_B = "Thunder God"
 		elseif MyLevel >= 500 then
-			if NameQuest == "SkyExp1Quest" then
-				Monster_B = "Wysper"
-
-				LevelQuest_B = 3
-				NameCheckQuest_B = "Wysper"
-			end
+			Monster_B = "Wysper"
+			LevelQuest_B = 3
+			NameCheckQuest_B = "Wysper"
 		elseif MyLevel >= 425 then
-			if NameQuest == "FishmanQuest" then
-				Monster_B = "Fishman Lord"
-
-				LevelQuest_B = 3
-				NameCheckQuest_B = "Fishman Lord"
-			end
+			Monster_B = "Fishman Lord"
+			LevelQuest_B = 3
+			NameCheckQuest_B = "Fishman Lord"
 		elseif MyLevel >= 350 then
-			if NameQuest == "MagmaQuest" then
-				Monster_B = "Magma Admiral"
-
-				LevelQuest_B = 3
-				NameCheckQuest_B = "Magma Admiral"
-			end
+			Monster_B = "Magma Admiral"
+			LevelQuest_B = 3
+			NameCheckQuest_B = "Magma Admiral"
 		elseif MyLevel >= 240 then
-			if NameQuest == "ImpelQuest" then
-				Monster_B = "Swan"
-
-				LevelQuest_B = 3
-				NameCheckQuest_B = "Swan"
-			end
+			Monster_B = "Swan"
+			LevelQuest_B = 3
+			NameCheckQuest_B = "Swan"
 		elseif MyLevel >= 230 then
-			if NameQuest == "ImpelQuest" then
-				Monster_B = "Chief Warden"
-
-				LevelQuest_B = 2
-				NameCheckQuest_B = "Chief Warden"
-			end
+			Monster_B = "Chief Warden"
+			LevelQuest_B = 2
+			NameCheckQuest_B = "Chief Warden"
 		elseif MyLevel >= 220 then
-			if NameQuest == "ImpelQuest" then
-				Monster_B = "Warden"
-
-				LevelQuest_B = 1
-				NameCheckQuest_B = "Warden"
-			end
+			Monster_B = "Warden"
+			LevelQuest_B = 1
+			NameCheckQuest_B = "Warden"
 		elseif MyLevel >= 130 then
-			if NameQuest == "MarineQuest2" then
-				Monster_B = "Vice Admiral"
-
-				LevelQuest_B = 2
-				NameCheckQuest_B = "Vice Admiral"
-			end
+			Monster_B = "Vice Admiral"
+			LevelQuest_B = 2
+			NameCheckQuest_B = "Vice Admiral"
 		elseif MyLevel >= 105 then
-			if NameQuest == "SnowQuest" then
-				Monster_B = "Yeti"
-
-				LevelQuest_B = 3
-				NameCheckQuest_B = "Yeti"
-			end
+			Monster_B = "Yeti"
+			LevelQuest_B = 3
+			NameCheckQuest_B = "Yeti"
 		elseif MyLevel >= 55 then
-			if NameQuest == "BuggyQuest1" then
-				Monster_B = "Bobby"
-
-				LevelQuest_B = 3
-				NameCheckQuest_B = "Bobby"
-			end
+			Monster_B = "Bobby"
+			LevelQuest_B = 3
+			NameCheckQuest_B = "Bobby"
 		elseif MyLevel >= 20 then
-			if NameQuest == "JungleQuest" then
-				Monster_B = "The Gorilla King"
-
-				LevelQuest_B = 3
-				NameCheckQuest_B = "The Gorilla King"
-			end
+			Monster_B = "The Gorilla King"
+			LevelQuest_B = 3
+			NameCheckQuest_B = "The Gorilla King"
 		end
 	end
+
 	return {
 		MT_B = Monster_B,
-		
 		LQ_B = LevelQuest_B,
 		NCQ_B = NameCheckQuest_B
 	}
 end
+
 return module
