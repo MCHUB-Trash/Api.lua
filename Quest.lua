@@ -1101,6 +1101,7 @@ module.getbossquest = function()
 				LevelQuest_B = 3
 				NameCheckQuest_B = "Stone"
 			end
+		end
 	elseif SecondSea then
 		elseif MyLevel >= 1475 then
 			if NameQuest == "ForgottenQuest" then
@@ -1144,6 +1145,7 @@ module.getbossquest = function()
 				LevelQuest_B = 3
 				NameCheckQuest_B = "Diamond"
 			end
+		end
 	elseif FirstSea  then
 		if MyLevel >= 675 then
 			if NameQuest == "FountainQuest" then
