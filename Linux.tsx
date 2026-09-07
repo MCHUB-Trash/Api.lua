@@ -98,7 +98,7 @@ function server.start()
     if success then
         pcall(function()
             StarterGui:SetCore("SendNotification", {
-                Title = "!! Edited Service !!",
+                Title = "!! Xyrax Hub !!",
                 Text = "Bypass Successfully"
             })
         end)
